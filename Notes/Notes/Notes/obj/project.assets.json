@@ -992,11 +992,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj",
+      "projectUniqueName": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj",
       "projectName": "Notes",
-      "projectPath": "H:\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj",
+      "projectPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj",
       "packagesPath": "C:\\Users\\jiangtao\\.nuget\\packages\\",
-      "outputPath": "H:\\Xamarin\\Notes\\Notes\\Notes\\obj\\",
+      "outputPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1017,8 +1017,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "H:\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj": {
-              "projectPath": "H:\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj"
+            "H:\\Xamarin\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj": {
+              "projectPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj"
             }
           }
         }

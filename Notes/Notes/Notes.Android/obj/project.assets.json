@@ -2227,11 +2227,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Xamarin\\Notes\\Notes\\Notes.Android\\Notes.Android.csproj",
+      "projectUniqueName": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes.Android\\Notes.Android.csproj",
       "projectName": "Notes.Android",
-      "projectPath": "H:\\Xamarin\\Notes\\Notes\\Notes.Android\\Notes.Android.csproj",
+      "projectPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes.Android\\Notes.Android.csproj",
       "packagesPath": "C:\\Users\\jiangtao\\.nuget\\packages\\",
-      "outputPath": "H:\\Xamarin\\Notes\\Notes\\Notes.Android\\obj\\",
+      "outputPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2252,8 +2252,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "H:\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj": {
-              "projectPath": "H:\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj"
+            "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj": {
+              "projectPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj"
             }
           }
         }

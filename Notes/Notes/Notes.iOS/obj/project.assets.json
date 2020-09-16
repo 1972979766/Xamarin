@@ -1563,11 +1563,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Xamarin\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
+      "projectUniqueName": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
       "projectName": "Notes.iOS",
-      "projectPath": "H:\\Xamarin\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
+      "projectPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
       "packagesPath": "C:\\Users\\jiangtao\\.nuget\\packages\\",
-      "outputPath": "H:\\Xamarin\\Notes\\Notes\\Notes.iOS\\obj\\",
+      "outputPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1588,8 +1588,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "H:\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj": {
-              "projectPath": "H:\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj"
+            "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj": {
+              "projectPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes\\Notes.csproj"
             }
           }
         }

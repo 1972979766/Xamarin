@@ -4,8 +4,9 @@
              x:Class="Notes.MainPage">
 
     <ContentPage.Content>
-        <StackLayout >
-            <StackLayout Margin="15,15,25,0">
+        <StackLayout  Margin="10,10,25,0">
+            <!--top Search-->
+            <StackLayout Margin="0,15,25,0">
                 <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
                     <Frame
                         Padding="0"
@@ -24,25 +25,46 @@
                             <Notes:CustomEntry Margin="-1,0,-1,0"  HorizontalOptions="FillAndExpand" />
                         </StackLayout>
                     </Frame>
-                    <StackLayout>
+                    <!--<StackLayout>
                         <Image
-                            Margin="13,0,0,0"
+                            Margin="5,0,0,-1"
                             Aspect="AspectFit"
                             HeightRequest="40"
                             Source="Search_Camera"
                             WidthRequest="40" />
-                    </StackLayout>
-                    <StackLayout>
-                        <Image
-                            Margin="13,0,0,0"
-                            Aspect="AspectFit"
-                            HeightRequest="40"
-                            Source="Search_Camera"
-                            WidthRequest="40" />
-                    </StackLayout>
+                    </StackLayout>-->
+                    
                 </StackLayout>
 
             </StackLayout>
+            
+            <!--content-->
+            <!--磚石推薦-->
+            <StackLayout Margin="1,10,0,10">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="磚石推薦" 
+                           FontAttributes="Bold" 
+                           TextColor="Black"
+                           FontSize="18"
+                           HorizontalOptions="StartAndExpand" >
+                        
+                    </Label>
+                    <StackLayout Margin="0,0,0,0">
+                        <Label
+                               FontSize="18"
+                               HorizontalOptions="EndAndExpand"
+                               Text="全部"
+                               FontAttributes="Bold" 
+                               TextColor="Black">
+                        </Label>
+
+                    </StackLayout>
+                </StackLayout>
+               
+
+            </StackLayout>
+            <!--磚石推薦 end -->
+           <!--bottom Menu-->
             <StackLayout Margin="0,-5,0,10" 
                          HeightRequest="80" 
                          HorizontalOptions="FillAndExpand" 

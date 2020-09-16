@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj": {}
+    "H:\\Xamarin\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj": {}
   },
   "projects": {
-    "H:\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj": {
+    "H:\\Xamarin\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj",
+        "projectUniqueName": "H:\\Xamarin\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj",
         "projectName": "Notes.DataBase",
-        "projectPath": "H:\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj",
+        "projectPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes.DataBase\\Notes.DataBase.csproj",
         "packagesPath": "C:\\Users\\jiangtao\\.nuget\\packages\\",
-        "outputPath": "H:\\Xamarin\\Notes\\Notes.DataBase\\obj\\",
+        "outputPath": "H:\\Xamarin\\Xamarin\\Notes\\Notes.DataBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

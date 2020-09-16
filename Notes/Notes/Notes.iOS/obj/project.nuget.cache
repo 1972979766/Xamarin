@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FuyiUuN2XEBLrS19380Ou7hvHKXRTv+7bRVkz1vnU9xISTCNh+DZs/9kywnAqSKgIS8agUIxSPEEfF2zoBJE2A==",
+  "dgSpecHash": "4aHqQd9tK77VHj0s2N+sQVOVHBE87lquRY4N/Ea6mOeJbttC4QNldKfRCrDXgRVBXgQA46q6vrkt3QQIdbx50w==",
   "success": true,
-  "projectFilePath": "H:\\Xamarin\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
+  "projectFilePath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jiangtao\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\jiangtao\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",

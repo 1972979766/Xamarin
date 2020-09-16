@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aUjNBlW0eD/b0f6jExCjGeD2ATn8HSXSus7h5lXT/Sv9t8FOgd08SJDYQu+GCi/1jwdGkwvE0qftctKIeGMoDg==",
+  "dgSpecHash": "QPZxkM72ifk5Z9m1VQNiFVy3K3x7btneH7zgYSSyAve0ZjgyiC/OYz3kVjv2g814F1m33qIi22myOyerJpE85Q==",
   "success": true,
-  "projectFilePath": "H:\\Xamarin\\Notes\\Notes\\Notes.Android\\Notes.Android.csproj",
+  "projectFilePath": "H:\\Xamarin\\Xamarin\\Notes\\Notes\\Notes.Android\\Notes.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jiangtao\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\jiangtao\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
