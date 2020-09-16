@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Notes="clr-namespace:Notes.Content"
+             x:Class="Notes.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout Margin="15,15,25,0">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Frame
+                        Padding="0"
+                        BackgroundColor="LightSteelBlue"
+                        CornerRadius="45"
+                        HasShadow="False"
+                        HeightRequest="41"
+                        HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal">
+                            <Image
+                                Margin="20,10,0,10"
+                                Aspect="Fill"
+                                HeightRequest="19"
+                                Source="search"
+                                WidthRequest="19" />
+                            <Notes:CustomEntry Margin="-1,0,-1,0"  HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </Frame>
+                    <StackLayout>
+                        <Image
+                            Margin="13,0,0,0"
+                            Aspect="AspectFit"
+                            HeightRequest="40"
+                            Source="Search_Camera"
+                            WidthRequest="40" />
+                    </StackLayout>
+                    <StackLayout>
+                        <Image
+                            Margin="13,0,0,0"
+                            Aspect="AspectFit"
+                            HeightRequest="40"
+                            Source="Search_Camera"
+                            WidthRequest="40" />
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+            <StackLayout Margin="0,-5,0,10" 
+                         HeightRequest="80" 
+                         HorizontalOptions="FillAndExpand" 
+                         VerticalOptions="EndAndExpand">
+                <BoxView
+                    Margin="0"
+                    BackgroundColor="DarkGray"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="StartAndExpand" />
+                <Frame Padding="0"
+                       HasShadow="True"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="Transparent"
+                       >
+                    <StackLayout
+                        Margin="5,5,5,5"
+                        HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        VerticalOptions="CenterAndExpand"
+                        >
+                        <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent">
+                                    <Image
+                                        Aspect="AspectFit"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="CenterAndExpand"
+                                        Source="sc.png"  WidthRequest="35" HeightRequest="35"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent">
+                                    <Image 
+                                        Aspect="AspectFit"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="CenterAndExpand"
+                                        Source="sc.png" WidthRequest="35" HeightRequest="35"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent">
+                                    <Image 
+                                        Aspect="AspectFit"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="CenterAndExpand"
+                                        Source="sc.png" WidthRequest="35" HeightRequest="35"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
