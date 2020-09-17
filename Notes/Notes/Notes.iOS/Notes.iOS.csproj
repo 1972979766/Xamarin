@@ -148,4 +148,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Search_Camera.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Image1.png" />
+  </ItemGroup>
 </Project>

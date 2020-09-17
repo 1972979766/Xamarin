@@ -2,6 +2,7 @@
 using Notes.Model;
 using Notes.Model.WeatherMapModel;
 using Notes.view;
+using Notes.ViewModel;
 using Notes.WebServiceTutorial;
 using System;
 using System.Collections.Generic;
@@ -16,9 +17,12 @@ namespace Notes
 {
     public partial class MainPage : ContentPage
     {
+        private CartViewModel _cartViewModel;
         public  MainPage()
         {
             InitializeComponent();
+            this.BindingContext = _cartViewModel = new CartViewModel();
+            
         }
        
     }
