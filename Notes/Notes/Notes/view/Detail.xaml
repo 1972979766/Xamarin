@@ -1,16 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.view.Detail"
-             xmlns:pages="clr-namespace:Notes.view">
-  <MasterDetailPage.Master>
-    <pages:DetailMaster x:Name="MasterPage" />
-  </MasterDetailPage.Master>
-  <MasterDetailPage.Detail>
-    <NavigationPage>
-      <x:Arguments>
-        
-      </x:Arguments>
-    </NavigationPage>
-  </MasterDetailPage.Detail>
-</MasterDetailPage>
+             >
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout>
+                <Image Aspect="AspectFit" Source="spatiltleimage"/>
+                <StackLayout Margin="5,5,5,5">
+                    <Label Text="我们是一个最优秀的团队，我们只走最高端的路线，我们是行业中的爱玛仕，是公鸡中的战斗机。我们服务的是最挑剔，要求最高的客户；诱spa会馆承诺：网站技师均为真实生活照，照片与本人均一致相同，个别技师本人比照片更加优秀，如有假冒愿承担一切责任，赔偿损失。我们欢迎相貌条件质量优秀的技师前来应聘，不满足应聘条件者，请自觉绕道。谢谢配合！ " />
+                </StackLayout>
+                <StackLayout>
+                    <Label HorizontalOptions="Center"
+                           FontSize="18"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                        Text="微信 2593644365 客服QQ 3125309611 "/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="-1">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="No.："/>
+                        <Label Text="{Binding No}"/>
+                        <Label Text="城市："/>
+                        <Label Text="{Binding Laction}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="級別："/>
+                        <Label Text="{Binding Price}"/>
+                        <Label Text="{Binding Descrpation}"/>
+                        <Label Text="{Binding Hobby}"/>
+                    </StackLayout>
+                </StackLayout>
+                <Frame CornerRadius="2" HeightRequest="200" Margin="0,20,0,0">
+                    <Image 
+                    HorizontalOptions="Center"
+                    HeightRequest="300"
+                    Aspect="AspectFit" 
+                    WidthRequest="300"
+                    Source="{Binding Image}"/>
+                </Frame>
+                <StackLayout Margin="10" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label FontSize="18"  TextColor="#0000FF" Text="我們只做高端"></Label>
+                </StackLayout>
+                <Frame CornerRadius="2" HeightRequest="200" Margin="0,20,0,0">
+                    <Image 
+                    HorizontalOptions="Center"
+                    HeightRequest="300"
+                    Aspect="AspectFit" 
+                    WidthRequest="300"
+                    Source="{Binding Image}"/>
+                </Frame>
+                <Frame CornerRadius="2" HeightRequest="200" Margin="0,20,0,0">
+                    <Image 
+                    HorizontalOptions="Center"
+                    HeightRequest="300"
+                    Aspect="AspectFit" 
+                    WidthRequest="300"
+                    Source="{Binding Image}"/>
+                </Frame>
+                <Frame CornerRadius="2" HeightRequest="200" Margin="0,20,0,0">
+                    <Image 
+                    HorizontalOptions="Center"
+                    HeightRequest="300"
+                    Aspect="AspectFit" 
+                    WidthRequest="300"
+                    Source="{Binding Image}"/>
+                </Frame>
+                <Frame CornerRadius="2" HeightRequest="200" Margin="0,20,0,0">
+                    <Image 
+                    HorizontalOptions="Center"
+                    HeightRequest="300"
+                    Aspect="AspectFit" 
+                    WidthRequest="300"
+                    Source="{Binding Image}"/>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -22,8 +22,16 @@ namespace Notes
         {
             InitializeComponent();
             this.BindingContext = _cartViewModel = new CartViewModel();
-            
         }
-       
+       private async void TapGestureRecognizer_Tapped() {
+            int id = 1;
+            await Navigation.PushModalAsync(new Detail(id));
+        }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+           var model= sender as CartModel;
+            await Navigation.PushModalAsync(new Detail(1));
+        }
     }
 }
