@@ -1,8 +1,0 @@
-H:\Xamarin\Notes\Notes.DataBase\bin\Debug\netstandard2.0\Notes.DataBase.deps.json
-H:\Xamarin\Notes\Notes.DataBase\bin\Debug\netstandard2.0\Notes.DataBase.dll
-H:\Xamarin\Notes\Notes.DataBase\bin\Debug\netstandard2.0\Notes.DataBase.pdb
-H:\Xamarin\Notes\Notes.DataBase\obj\Debug\netstandard2.0\Notes.DataBase.csproj.CoreCompileInputs.cache
-H:\Xamarin\Notes\Notes.DataBase\obj\Debug\netstandard2.0\Notes.DataBase.AssemblyInfoInputs.cache
-H:\Xamarin\Notes\Notes.DataBase\obj\Debug\netstandard2.0\Notes.DataBase.AssemblyInfo.cs
-H:\Xamarin\Notes\Notes.DataBase\obj\Debug\netstandard2.0\Notes.DataBase.dll
-H:\Xamarin\Notes\Notes.DataBase\obj\Debug\netstandard2.0\Notes.DataBase.pdb
