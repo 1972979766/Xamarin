@@ -13,17 +13,23 @@ namespace Notes.ViewModel
     public class CartViewModel: INotifyPropertyChanged
     {
         public ObservableCollection<CartModel> itemPreview { get; private set; }
+        public ObservableCollection<CartModel> newPreview { get; private set; }
         public ICommand DeleteCommand => new Command<CartModel>(RemoveCart);
         public CartViewModel() {
             itemPreview = new ObservableCollection<CartModel>();
+            newPreview = new ObservableCollection<CartModel>();
             CreateItemCollection();
-            
+            CreateItemCollectionNew();
         }
         void RemoveCart(CartModel cart)
         {
             if (itemPreview.Contains(cart))
             {
                 itemPreview.Remove(cart);
+            }
+            if (newPreview.Contains(cart))
+            {
+                newPreview.Remove(cart);
             }
         }
         void CreateItemCollection() {
@@ -34,7 +40,7 @@ namespace Notes.ViewModel
                 itemPreview.Add(new CartModel
                 {
                     Id = i,
-                    No = 1,
+                    No = i+1,
                     Descrpation = "陽光 活潑 帥氣 大方",
                     Hobby = "陽光",
                     Laction = "上海" + i,
@@ -44,6 +50,26 @@ namespace Notes.ViewModel
             }
             
             
+        }
+        void CreateItemCollectionNew()
+        {
+
+            for (int i = 0; i < 40; i++)
+            {
+
+                newPreview.Add(new CartModel
+                {
+                    Id = i,
+                    No = i+1,
+                    Descrpation = "陽光 活潑 帥氣 大方",
+                    Hobby = "陽光",
+                    Laction = "上海" + i,
+                    Image = "Image1.png",
+                    Price = "5k"
+                });
+            }
+
+
         }
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

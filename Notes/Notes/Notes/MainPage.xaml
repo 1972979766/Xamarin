@@ -4,177 +4,253 @@
              x:Class="Notes.MainPage">
 
     <ContentPage.Content>
+
         <StackLayout  Margin="10,10,25,0">
+            <Frame  Padding="0" HorizontalOptions="Fill">
+                <Image Source="spatiltleimage.jpg"  VerticalOptions="Fill" />
+            </Frame>
             <!--top Search-->
-            <StackLayout Margin="0,15,25,0">
-                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-                    <Frame
-                        Padding="0"
-                        BackgroundColor="LightSteelBlue"
-                        CornerRadius="45"
-                        HasShadow="False"
-                        HeightRequest="41"
-                        HorizontalOptions="FillAndExpand">
-                        <StackLayout Orientation="Horizontal">
+            <StackLayout Margin="-1" BackgroundColor="Black" VerticalOptions="StartAndExpand">
+                <StackLayout Margin="0,15,25,0" >
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Frame
+                            Padding="0"
+                            BackgroundColor="LightSteelBlue"
+                            CornerRadius="45"
+                            HasShadow="False"
+                            HeightRequest="41"
+                            HorizontalOptions="FillAndExpand">
+
+                            <StackLayout Orientation="Horizontal">
+                                <Image
+                                    Margin="20,10,0,10"
+                                    Aspect="Fill"
+                                    HeightRequest="19"
+                                    Source="search"
+                                    WidthRequest="19" />
+                                <Notes:CustomEntry Margin="-1,0,-1,0"  HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </Frame>
+                        <!--<StackLayout>
                             <Image
-                                Margin="20,10,0,10"
-                                Aspect="Fill"
-                                HeightRequest="19"
-                                Source="search"
-                                WidthRequest="19" />
-                            <Notes:CustomEntry Margin="-1,0,-1,0"  HorizontalOptions="FillAndExpand" />
-                        </StackLayout>
-                    </Frame>
-                    <!--<StackLayout>
-                        <Image
-                            Margin="5,0,0,-1"
-                            Aspect="AspectFit"
-                            HeightRequest="40"
-                            Source="Search_Camera"
-                            WidthRequest="40" />
-                    </StackLayout>-->
+                                Margin="5,0,0,-1"
+                                Aspect="AspectFit"
+                                HeightRequest="40"
+                                Source="Search_Camera"
+                                WidthRequest="40" />
+                        </StackLayout>-->
+
+                    </StackLayout>
 
                 </StackLayout>
-
             </StackLayout>
-
-            <!--content-->
-            <!--磚石推薦-->
-            <StackLayout Margin="1,10,0,10">
-                <!--top all -->
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="磚石推薦" 
+            <ScrollView>
+                <StackLayout>
+                    <!--content-->
+                    <!--磚石推薦-->
+                    <StackLayout Margin="1,10,0,10">
+                        <!--top all -->
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="磚石推薦" 
                            FontAttributes="Bold" 
                            TextColor="Black"
                            FontSize="18"
                            HorizontalOptions="StartAndExpand" >
 
-                    </Label>
-                    <StackLayout Margin="0,0,0,0">
-                        <Label
+                            </Label>
+                            <StackLayout Margin="0,0,0,0">
+                                <Label
                                FontSize="18"
                                HorizontalOptions="EndAndExpand"
                                Text="全部"
                                FontAttributes="Bold" 
                                TextColor="Black">
-                        </Label>
+                                </Label>
 
+                            </StackLayout>
+                        </StackLayout>
+                        <!--card-->
+                        <StackLayout HeightRequest="450">
+                            <StackLayout Margin="0,10,0,10">
+                                <CollectionView ItemsSource="{Binding itemPreview}">
+                                    <CollectionView.ItemsLayout>
+                                        <LinearItemsLayout ItemSpacing="0" Orientation="Horizontal" />
+                                    </CollectionView.ItemsLayout>
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate >
+                                            <!--card 1-->
+                                            <StackLayout Margin="0" HorizontalOptions="CenterAndExpand">
+                                                <Frame HasShadow="True" CornerRadius="6">
+                                                <StackLayout>
+                                                    <Frame CornerRadius="2" HasShadow="False" IsClippedToBounds="True">
+                                                        <Image 
+                                                            Aspect="AspectFit"
+                                                             HeightRequest="240"
+                                                            WidthRequest="165"
+                                                            Source="{Binding Image}" />
+                                                    </Frame>
+                                                        <StackLayout>
+                                                            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="{Binding No}"/>
+                                                            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="{Binding Laction}"/>
+                                                            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="{Binding Descrpation}"/>
+                                                            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+                                                                <Label Text="級別:" VerticalOptions="Center" />
+                                                                <Label HorizontalOptions="Center" VerticalOptions="Center" Text="{Binding Price}"/>
+                                                            </StackLayout>
+                                                        </StackLayout>
+                                                        <StackLayout.GestureRecognizers>
+                                                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped" />
+                                                        </StackLayout.GestureRecognizers>
+                                                    </StackLayout>
+                                                    
+                                                </Frame>
+                                            </StackLayout>
+                                            <!--card 2-->
+
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+
+                            </StackLayout>
+                        </StackLayout>
+                        <!--磚石推薦 end -->
                     </StackLayout>
-                </StackLayout>
-                <!--card-->
-                <StackLayout HeightRequest="400">
-                    <StackLayout Margin="0,10,0,10">
-                        <CollectionView ItemsSource="{Binding itemPreview}">
-                            <CollectionView.ItemsLayout>
-                                <LinearItemsLayout ItemSpacing="0" Orientation="Horizontal" />
-                            </CollectionView.ItemsLayout>
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate >
-                                    <!--card 1-->
-                                    <StackLayout Margin="0" HorizontalOptions="CenterAndExpand">
+
+                    <!--最新推薦 start-->
+                    <StackLayout >
+                        <!--top-->
+                        <StackLayout>
+                            <Label Text="最新推薦" 
+                           VerticalOptions="Start" 
+                           FontAttributes="Bold" 
+                           TextColor="Black"
+                           FontSize="18"/>
+                        </StackLayout>
+
+                        <!--comtent-->
+                        <StackLayout>
+                            <CollectionView HeightRequest="300" ItemsSource="{Binding newPreview}">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
                                         <StackLayout>
-                                            <Frame CornerRadius="5" HasShadow="False" IsClippedToBounds="True">
-                                                <Image 
-                                                Aspect="AspectFit"
-                                                 HeightRequest="240"
-                                                WidthRequest="165"
-                                                Source="{Binding Image}"/>
+                                            <Frame>
+                                                <StackLayout Margin="15,10,15,10" Orientation="Horizontal">
+                                                    <Frame CornerRadius="25"
+                                                           HeightRequest="85"
+                                                           Opacity="10"
+                                                           WidthRequest="80"
+                                                           Padding="0"
+                                                           HasShadow="True"
+                                                   >
+                                                        <Image 
+                                                            WidthRequest="70"
+                                                            HeightRequest="80"
+                                                            HorizontalOptions="CenterAndExpand"
+                                                            VerticalOptions="CenterAndExpand"
+                                                            Aspect="AspectFit"
+                                                            Source="{Binding Image}"/>
+
+                                                    </Frame>
+                                                    <StackLayout Margin="40,0,0,0">
+                                                        <StackLayout Orientation="Horizontal" >
+                                                            <Label 
+                                                                FontAttributes="Bold"
+                                                                FontSize="16"
+                                                                HorizontalOptions="Center" Text="No"/>
+                                                            <Label 
+                                                                FontAttributes="Bold"
+                                                                FontSize="16"
+                                                                HorizontalOptions="Center" Text="{Binding No}"/>
+                                                        </StackLayout>
+                                                        <StackLayout Orientation="Horizontal">
+                                                            <Label
+                                                            FontSize="12"
+                                                            HorizontalOptions="Center"
+                                                            Text="城市："/>
+                                                            <Label
+                                                            FontSize="12"
+                                                            HorizontalOptions="Center"
+                                                            Text="{Binding Laction}"/>
+                                                        </StackLayout>
+                                                        <StackLayout Orientation="Horizontal">
+                                                            <Label Text="級別："/>
+                                                            <Label Text="{Binding Price}"/>
+                                                        </StackLayout>
+                                                        <StackLayout HorizontalOptions="End" VerticalOptions="End" >
+                                                        <Label Text="2020-09-17" />
+                                                        </StackLayout>
+                                                    </StackLayout>
+                                                </StackLayout>
                                             </Frame>
                                         </StackLayout>
-                                        <StackLayout Margin="0,-10,0,0">
-                                            <Label
-                                    FontSize="16" 
-                                    VerticalOptions="Start"
-                                            Text="{Binding Laction}"
-                                            TextColor="Black"
-                                            HorizontalOptions="Center"
-                                            >
-                                            </Label>
-                                            <Label
-                                        HorizontalOptions="Center"
-                                        Text="{Binding No}"
-                                        TextColor="Black"
-                                        />
-                                            <Label
-                                            HorizontalOptions="Center"
-                                            Text="{Binding Descrpation}"
-                                            TextColor="#929292"
-                                            />
-                                            <Label
-                                            HorizontalOptions="Center"
-                                            Text="{Binding Hobby}"
-                                            TextColor="#929292"
-                                            />
-                                        </StackLayout>
-                                    </StackLayout>
-                                    <!--card 2-->
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
 
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-
+                        </StackLayout>
                     </StackLayout>
+                    <!--最新推薦 end-->
                 </StackLayout>
-                <!--磚石推薦 end -->
-                <!--bottom Menu-->
-                <StackLayout Margin="0,-5,0,10" 
+            </ScrollView>
+
+            <!--bottom Menu-->
+            <StackLayout Margin="0,-5,0,10" 
                          HeightRequest="80" 
                          HorizontalOptions="FillAndExpand" 
                          VerticalOptions="EndAndExpand">
-                    <BoxView
+                <BoxView
                     Margin="0"
                     BackgroundColor="DarkGray"
                     HeightRequest="1"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="StartAndExpand" />
-                    <Frame Padding="0"
+                <Frame Padding="0"
                        HasShadow="True"
                        HorizontalOptions="FillAndExpand"
                        BackgroundColor="Transparent"
                        >
-                        <StackLayout
+                    <StackLayout
                         Margin="5,5,5,5"
                         HorizontalOptions="FillAndExpand"
                         Orientation="Horizontal"
                         VerticalOptions="CenterAndExpand"
                         >
-                            <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
-                                <StackLayout>
-                                    <Frame BackgroundColor="Transparent">
-                                        <Image
+                        <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent">
+                                    <Image
                                         Aspect="AspectFit"
                                         HorizontalOptions="Center"
                                         VerticalOptions="CenterAndExpand"
                                         Source="sc.png"  WidthRequest="35" HeightRequest="35"/>
-                                    </Frame>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
-                                <StackLayout>
-                                    <Frame BackgroundColor="Transparent">
-                                        <Image 
-                                        Aspect="AspectFit"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="CenterAndExpand"
-                                        Source="sc.png" WidthRequest="35" HeightRequest="35"/>
-                                    </Frame>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
-                                <StackLayout>
-                                    <Frame BackgroundColor="Transparent">
-                                        <Image 
-                                        Aspect="AspectFit"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="CenterAndExpand"
-                                        Source="sc.png" WidthRequest="35" HeightRequest="35"/>
-                                    </Frame>
-                                </StackLayout>
+                                </Frame>
                             </StackLayout>
                         </StackLayout>
+                        <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent">
+                                    <Image 
+                                        Aspect="AspectFit"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="CenterAndExpand"
+                                        Source="sc.png" WidthRequest="35" HeightRequest="35"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Margin="1,2,1,2" HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent">
+                                    <Image 
+                                        Aspect="AspectFit"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="CenterAndExpand"
+                                        Source="sc.png" WidthRequest="35" HeightRequest="35"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
 
-                    </Frame>
-                </StackLayout>
+                </Frame>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
